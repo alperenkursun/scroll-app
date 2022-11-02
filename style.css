@@ -1,0 +1,160 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    overflow-x: hidden;
+    
+}
+
+.container{
+    width: 1000px !important;
+    margin: 0 auto !important;
+}
+
+#bg{
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+}
+
+#navbar{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 2000;
+    height: 100px;
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    width: 70px;
+    padding: 20px;
+}
+
+#links a{
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+    padding: 20px;
+}
+
+#showcase{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index: 1000;
+}
+
+#showcase h1{
+    color: white;
+    font-size: 45px;
+}
+
+#showcase p{
+    color: white;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+#showcase a{
+    background-color: transparent;
+    border:3px solid white;
+    color: white;
+    padding: 18px;
+    letter-spacing: 1px;
+    font-weight: 700 !important;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.7s;
+    margin-top: 25px 0 0 0;
+    text-decoration: none;
+}
+
+#showcase a:hover{
+    background-color: white;
+    color:aquamarine;
+}
+
+#filterbg{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color:aquamarine;
+    opacity: 0.30;
+}
+
+.about{
+    width: 100vw;
+    height: 70vh;
+    text-align: center;
+}
+
+.about h1{
+    padding: 0;
+    margin: 0;
+}
+
+.sus{
+    color: aquamarine;
+}
+
+.light{
+    background-color: gainsboro;
+}
+
+#footer{
+    width: 100vw;
+    height: 18vh;
+    text-align: center;
+    background-color: navy;
+    color:white;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu{
+    display: none;
+    padding: 20px;
+    cursor: pointer;
+}
+
+@media(max-width:1000px){
+    #menu{
+        display: block;
+        color: white;
+        position: absolute;
+        right: 20px;
+    }
+
+    #navbar{
+        background-color:aquamarine !important;
+    }
+
+    #nav{
+        display: inline-flex;
+    }
+
+    #links{
+        padding-top: 100px;
+        display: none;
+    }
+
+    #links a{
+        background-color: aquamarine;
+        width: 100vw;
+        display: none;
+    }
+}
+
